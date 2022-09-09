@@ -113,18 +113,13 @@ export const ProductList = () => {
                     xl: 130,
                     xxl: 200,
                   }}
-                  src={
-                    <Image
-                      src={item.image}
-                      // style={{
-                      //   width: 55,
-                      //   height: 55,
-                      // }}
-                    />
-                  }
+                  // src={
+                  // <Image
+                  src={item.image}
+                  // />
+                  // }
                 />
               }
-              // title={<a href="#">{item.name}</a>}
               title={<div>{item.name}</div>}
               description={<div>{item.price}</div>}
             />

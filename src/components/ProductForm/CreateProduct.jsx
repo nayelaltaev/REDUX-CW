@@ -7,8 +7,6 @@ import {
   setEditProduct,
 } from "../../store/actions";
 import { useDispatch, useSelector } from "react-redux";
-// import { deleteProduct } from "./../../store/actions";
-// !!!
 // !!!! lets start
 // !!!! lets start
 // !!!! lets start
@@ -44,12 +42,6 @@ export const CreateProduct = () => {
     }, 0);
     //
     dispatch(setModalState(false));
-    //
-    //   const deleteItem = (values) => {
-    //     dispatch(deleteProduct(values));
-    //     console.log(values);
-    //   };
-    //
   };
   console.log("editProduct", editProduct);
   //
@@ -57,10 +49,6 @@ export const CreateProduct = () => {
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
-  //
-  // const handleDelete = (products) => {
-  //   dispatch(deleteProduct(products.id));
-  // };
   //
   const title = editProduct ? "Update" : "Send";
   const modalTitle = editProduct ? "Update Product" : "Create Product";
@@ -106,6 +94,7 @@ export const CreateProduct = () => {
           style={{ marginLeft: 165 }}
           name="image"
           valuePropName="file"
+          type="image.png"
         >
           <Upload
             accept=".png, .jpg"
