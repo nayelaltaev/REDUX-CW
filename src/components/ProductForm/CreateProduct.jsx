@@ -121,7 +121,8 @@ export const CreateProduct = () => {
             type="primary"
             htmlType="submit"
           >
-            {title}
+            {/* {title} */}
+            Save
           </Button>
         </Form.Item>
       </Form>
